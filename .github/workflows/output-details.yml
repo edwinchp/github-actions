@@ -5,6 +5,6 @@ on:
 jobs:
   display:
     runs-on: ubuntu-latest
-      steps:
-        - name: Display issue information
-          run: echo {toJSON(github.event.issues)}
+    steps:
+      - name: Display issue information
+        run: echo {toJSON(github.event.issues)}
