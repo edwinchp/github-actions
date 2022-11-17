@@ -14,8 +14,8 @@ jobs:
         run: npm run test
   build:
     runs-on: ubuntu-latest
-    steps:
     needs: test
+    steps:
       - name: Get code
         uses: actions/checkout@v3
       - name: Install NodeJS
