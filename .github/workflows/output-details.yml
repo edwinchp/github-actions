@@ -1,0 +1,9 @@
+name: Issue is created
+on:
+  issues:
+    types: [opened]
+jobs:
+  display:
+    runs-on: ubuntu-latest
+      - name: Display
+      run: echo {toJSON(github.event.issues)}
