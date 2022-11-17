@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
       steps:
         - name: Display issue information
-        run: echo {toJSON(github.event.issues)}
+          run: echo {toJSON(github.event.issues)}
